@@ -370,6 +370,13 @@ nav.show div.icon-close {
   text-align: center;
 }
 
+.card:hover img {
+  top: -100px;
+  transform: scale(1.1);
+  animation: bounce 0.7s infinite alternate;
+  -webkit-animation: bounce 0.7s infinite alternate;
+}
+
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
@@ -568,6 +575,26 @@ button.slick-next {
   max-width: 800px;
   margin: 0px auto;
   transform: scale(1);
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 
