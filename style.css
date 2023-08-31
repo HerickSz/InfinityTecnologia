@@ -30,13 +30,13 @@ img {
   /* colors */
   --hue: 300;
   /* HSL color mode */
-  --base-color: hsl(278, 100%, 50%);
-  --base-color-second: hsl(278, 100%, 50%);
+  --base-color: #8C52FF;
+  --base-color-second: #8C52FF;
   --base-color-alt: hsl(350, 100%, 50%);
   --title-color: hsl(0, 0%, 0%);
   --text-color: hsl(0, 0%, 0%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: hsl(0, 0%, 100%);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -76,6 +76,25 @@ body {
   transition: background 0.3s;
 }
 
+
+.button:hover {
+  background: var(--base-color-alt);
+}
+
+
+.button3 {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+}
+
+
 .button:hover {
   background: var(--base-color-alt);
 }
@@ -106,7 +125,7 @@ body {
 }
 
 .section {
-  padding: calc(3rem + var(--header-height)) 0;
+  padding: calc(4rem + var(--header-height)) 0;
 }
 
 .mapa {
@@ -273,7 +292,7 @@ nav.show div.icon-close {
   background-image: url(./assets/fotos/homeft.png);
   background-repeat: no-repeat;
   background-size: cover;
-
+  width: 100%;
 }
 
 #home .container {
@@ -296,6 +315,7 @@ nav.show div.icon-close {
 }
 
 #home .image img {
+  width: 100%;
   position: relative;
   right: 1rem;
 }
@@ -610,7 +630,7 @@ button.slick-next {
   }
 
   .section {
-    padding: 10rem 0;
+    padding: 15rem 0;
   }
 
   .section header,
