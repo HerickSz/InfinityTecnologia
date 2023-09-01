@@ -96,7 +96,7 @@ body {
 
 
 .button:hover {
-  background: var(--base-color-alt);
+  background: #FE19AA;
 }
 
 .divider-1 {
@@ -125,7 +125,7 @@ body {
 }
 
 .section {
-  padding: calc(4rem + var(--header-height)) 0;
+  padding: calc(6rem + var(--header-height)) 0;
 }
 
 .mapa {
@@ -289,7 +289,7 @@ nav.show div.icon-close {
 /*====  HOME ============================ */
 #home {
   overflow: hidden;
-  background-image: url(./assets/fotos/homeft.png);
+  background-image: url(./assets/fotos//fthome.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -401,6 +401,8 @@ nav.show div.icon-close {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
+
+
 
 .card a {
   position: absolute;
@@ -524,7 +526,7 @@ footer .social a:hover {
 .slick-dots li button {
   display: inline-block;
   font-size: 0px;
-  border: 2px solid hsl(278, 100%, 50%);
+  border: 2px solid #FE19AA;
   width: 14px;
   height: 14px;
   background: rgba(255, 255, 255, 0);
@@ -533,7 +535,7 @@ footer .social a:hover {
 }
 
 li.slick-active button {
-  background: hsl(278, 100%, 50%);
+  background: #FE19AA;
 }
 
 
@@ -629,13 +631,13 @@ button.slick-next {
     margin-right: auto;
   }
 
-  .section {
+  /*.section {
     padding: 15rem 0;
-  }
+  }*/
 
   .section header,
   #testimonials header {
-    max-width: 32rem;
+    max-width: 50rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
