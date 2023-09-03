@@ -125,7 +125,7 @@ body {
 }
 
 .section {
-  padding: calc(6rem + var(--header-height)) 0;
+  padding: calc(4rem + var(--header-height)) 0;
 }
 
 .mapa {
@@ -598,6 +598,8 @@ button.slick-next {
   margin: 0px auto;
   transform: scale(1);
 }
+
+
 
 @keyframes bounce {
   from {
