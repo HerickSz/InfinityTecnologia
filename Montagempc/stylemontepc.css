@@ -30,13 +30,13 @@ img {
   /* colors */
   --hue: 300;
   /* HSL color mode */
-  --base-color: hsl(278, 100%, 50%);
-  --base-color-second: hsl(278, 100%, 50%);
+  --base-color: #8C52FF;
+  --base-color-second: #8C52FF;
   --base-color-alt: hsl(350, 100%, 50%);
   --title-color: hsl(0, 0%, 0%);
   --text-color: hsl(0, 0%, 0%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: hsl(0, 0%, 100%);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -366,6 +366,13 @@ nav.show div.icon-close {
   text-align: center;
 }
 
+.card:hover img {
+  top: -100px;
+  transform: scale(1.1);
+  animation: bounce 0.7s infinite alternate;
+  -webkit-animation: bounce 0.7s infinite alternate;
+}
+
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
@@ -607,6 +614,26 @@ button:hover {
   background-color: #800000;
   border: 1px solid #800000;
   transition: 0.3s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 /*========= MEDIA QUERIES =========*/
