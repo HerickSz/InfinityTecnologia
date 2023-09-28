@@ -73,7 +73,11 @@ body {
   padding: 0 2rem;
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
-  transition: background 0.3s;
+  transition: .3s ease;
+}
+
+.button:hover {
+  transform: scale(1.2);
 }
 
 .button:hover {
@@ -378,7 +382,7 @@ nav.show div.icon-close {
 }
 
 .card .title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0.75rem;
 }
 
