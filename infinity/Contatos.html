@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Contatos | Infinity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="../src/images/logoIT.png">
+  <link rel="stylesheet" href="../infinity/stylecontact.css" />
+  <link rel="preload" href="../src/images/perf.jpg" as="image" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      VANTA.FOG({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0x8c52ff,
+        midtoneColor: 0x8c52ff,
+        lowlightColor: 0xab88f2,
+        baseColor: 0x50404
+      })
+
+      setTimeout(() => {
+        const main = document.querySelector("main");
+        main.style.opacity = 1;
+        main.style.filter = "blur(0px)";
+      }, 1000);
+    });
+
+    function copiarTexto() {
+      let textoCopiado = document.getElementById("texto");
+      textoCopiado.select();
+      textoCopiado.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      var element = document.body;
+
+      if (element.classList.toggle(".texto") == true) {
+
+        return swal("Id Discord Copiado!", {
+          button: false,
+        })
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="vanta"></div>
+  <center>
+    <main class="animated">
+      <header>
+        <img src="../src/images/perf.jpg" />
+        <h1>@a.infinitytec
+          | 💻</h1>
+        <!-- <audio controls autoplay>
+        <source src="./twenty one pilots_ Stressed Out [OFFICIAL VIDEO]_pXRviuL6vMY.mp3"
+          type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+       -->
+      </header>
+      <ul>
+        <!--
+        <li>
+          <a href="https://github.com/HerickSz">
+            <img src="https://cdn-icons-png.flaticon.com/512/5045/5045810.png" alt="Homepage" width="30" />
+            Site⠀⠀⠀⠀⠀
+          </a>
+        </li>
+       
+        <li>
+          <a>
+            <img src="https://cdn-icons-png.flaticon.com/512/4494/4494732.png" alt="YouTube" width="35" />
+
+            <input type="text" name="texto" id="texto" readonly placeholder="Digite alguma coisa" value="heerick.gg" />
+            <button onclick="copiarTexto()">Copiar</button>
+          </a>
+        </li>
+         -->
+        <li>
+          <a href="https://www.instagram.com/a.infinitytec/">
+            <img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="YouTube" width="35" />
+            Instagram⠀⠀
+          </a>
+        </li>
+        <li>
+          <a href="https://api.whatsapp.com/send/?phone=5533984610269&text=Olá! Gostaria de saber mais sobre o seu Serviço."
+            target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="Twitter" width="30" />
+
+            Whatsapp⠀⠀
+
+          </a>
+        </li>
+        <li>
+          <a href="https://shopee.com.br/infinity_tecnologia">
+            <img src="https://i.pinimg.com/originals/90/b2/65/90b26573e0f822d9bb987d05ce396cbc.png" alt="shopee"
+              width="30" />
+            Loja - Shopee⠀⠀
+          </a>
+        </li>
+        <li>
+          <a href="https://infinitytecnologia.com/">
+            <img src="https://cdn-icons-png.flaticon.com/512/9670/9670925.png" alt="GitHub" width="30" />
+            WebSite⠀⠀
+          </a>
+        </li>
+
+      </ul>
+    </main>
+  </center>
+</body>
+
+</html>
