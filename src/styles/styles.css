@@ -8,13 +8,13 @@
 :root {
     --color-primary-1: #fff9ea;
     --color-primary-2: #8c52ff;
-    --color-primary-3: #c577f8;
+    --color-primary-3: #af6ef8;
     --color-primary-4: #8c52ff;
     --color-primary-5: #8c52ff;
     --color-primary-6: #8c52ff;
 
     --color-neutral-0: #fff;
-    --color-neutral-1: #1d1d1d;
+    --color-neutral-1: #000000;
 }
 
 * {
@@ -38,7 +38,7 @@ section {
 
 .btn-default {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     border: none;
     display: flex;
     align-items: center;
@@ -148,6 +148,10 @@ button a {
 a:hover {
     transition: 0.2s ease-in;
     transform: scale(0.9);
+}
+
+#copyright {
+    color: #fff;
 }
 
 
