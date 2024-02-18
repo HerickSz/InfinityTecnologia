@@ -37,6 +37,8 @@ section {
 }
 
 .btn-default {
+    text-decoration: none;
+    color: #000;
     border: none;
     display: flex;
     align-items: center;
@@ -150,6 +152,13 @@ a:hover {
 
 
 @media (max-width: 600px) {
+    content {
+        width: 80%;
+    }
+
+    #testimonials {
+        width: 98%;
+    }
 
     #container-2 {
         width: 100vw;

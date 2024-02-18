@@ -77,14 +77,14 @@
 
 @media screen and (max-width: 600px) {
     #testimonials .section-subtitle {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #testimonials_content {
-        width: 100%;
+        width: 90%;
     }
 
     .feedback {
         flex-direction: column;
     }
-} 
+}
